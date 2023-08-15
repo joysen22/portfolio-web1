@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio webside</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--header logo section start-->
+      <div class="header">
+        <div class="header-logo">
+          <img src="./images/logo.png" alt="logo image" />
+        </div>
+        <div class="toggles">
+          <i class="open fa-solid fa-bars"></i>
+
+          <i class="close display-none bi bi-x-lg"></i>
+        </div>
+        <!--  navbar section start-->
+        <div id="nav" class="navbar display-none">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- navbar section end -->
+      </div>
+      <div class="home">
+        <div class="home-left">
+          <!-- <p>Web Designer</p> -->
+          <h2>
+            Hi, I'm Joysen <br />and a web developer <br />
+            in Bangladeshi.
+          </h2>
+          <a class="btn download" href="#" download>Download Cv</a>
+        </div>
+        <div class="home-right">
+          <!-- <img src="./images/background.png" alt="background-image" /> -->
+        </div>
+      </div>
+    </div>
+    <!-- about section start -->
+    <div class="container">
+      <div class="about">
+        <div class="about-left">
+          <img src="./images/user.png" alt="use image" />
+        </div>
+        <div class="about-right">
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur aliquid, corrupti dolore doloremque laboriosam
+            doloribus ab dicta eligendi odio velit eum consectetur aperiam
+            possimus perspiciatis at temporibus placeat modi facere.
+          </p>
+          <div class="about-items">
+            <ul>
+              <li
+                class="active-item items-about"
+                onclick=" showContent('skills')"
+              >
+                Skills
+              </li>
+              <li class="items-about" onclick=" showContent('experience')">
+                experience
+              </li>
+              <li class="items-about" onclick=" showContent('education')">
+                education
+              </li>
+            </ul>
+          </div>
+          <div class="about-content show" id="skills">
+            <ul>
+              <li>
+                <span>UX/UI</span><br />
+                Designing Web/App interfaces
+              </li>
+              <li>
+                <span>Web Development</span><br />
+                Web app Development
+              </li>
+              <li>
+                <span>App Development</span> <br />
+                Building Android/iOS apps
+              </li>
+            </ul>
+          </div>
+          <div class="about-content hidden" id="experience">
+            <ul>
+              <li>
+                <span>2021 -current</span><br />UX/UI Design training at ET
+                Institute.
+              </li>
+              <li>
+                <span>2019-2021</span><br />
+                Team lead at StarApp LLC.
+              </li>
+              <li>
+                <span>2017-2019</span> <br />
+                UI/UX Design executive at coin digital LTD.
+              </li>
+            </ul>
+          </div>
+          <div class="about-content hidden" id="education">
+            <ul>
+              <li>
+                <span>2016</span><br />
+                UX/UI design training at ET Institute.
+              </li>
+              <li>
+                <span>2016</span><br />
+                MBA from MTI Bangalore.
+              </li>
+              <li>
+                <span>2014</span> <br />
+                BBA from ISM Bangalore
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section end -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
